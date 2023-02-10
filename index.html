@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>Kalkulator</title>
+</head>
+<body>
+  <div id="kalkulator">
+    <h1>Kalkulator</h1>
+    <p id="box" class="box">0</p>
+    <table id="table">
+      <tr>
+        <td>
+          <button onclick="calculate_precentage()">%</button>
+        </td>
+        <td>
+          <button onclick="clear_entry()">CE</button>
+        </td>
+        <td>
+          <button id="backspace_btn" onclick="backspace_remove()">Del</button>
+
+        </td>
+        <td>
+          <button onclick="button_number('+')" id="plusOp" value="+" class="operator">+</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="button_number(7)">7</button>
+        </td>
+        <td>
+          <button onclick="button_number(8)">8</button>
+        </td>
+        <td>
+          <button onclick="button_number(9)">9</button>
+        </td>
+        <td>
+          <button onclick="button_number('-')" id="subOp" value="-" class="operator">-</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="button_number(4)">4</button>
+        </td>
+        <td>
+          <button onclick="button_number(5)">5</button>
+        </td>
+        <td>
+          <button onclick="button_number(6)">6</button>
+        </td>
+        <td>
+          <button onclick="button_number('*')" id="multiOp" value="*" class="operator">x</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="button_number(1)">1</button>
+        </td>
+        <td>
+          <button onclick="button_number(2)">2</button>
+        </td>
+        <td>
+          <button onclick="button_number(3)">3</button>
+        </td>
+        <td>
+          <button onclick="button_number('/')" id="divOp" value="/" class="operator">/</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="button_number(0)">0</button>
+        </td>
+        <td>
+          <button onclick="button_number(00)">00</button>
+        </td>
+        <td>
+          <button onclick="button_number('.')" id="dot" class="operator">.</button>
+        </td>
+        <td>
+          <button onclick="button_number('=')" id="equal_sign" value="=" class="operator">=</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <script src="assets/main.js"></script>
+</body>
+</html>
